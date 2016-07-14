@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://www.javierayala.com"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,52 +14,53 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Javier Ayala
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: "Javier's Musings About His World"
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  About Me:
+    - My History: "my-history"
+    - Contact: "contact"
+  Password Generator: "password-generator"
+  Pictures:
+    - Flickr: "https://www.flickr.com/photos/landofthegargoyle/"
+    - My Gallery: "http://pics.landofthegargoyle.com/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/jayala.jpg"
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
- 
+  name: Javier Ayala
+  email: "javier.g.ayala@gmail.com"
+  facebook:
+  github: javiergayala    # eg. daattali
+  twitter: javiergayala   # eg. daattali
+  linkedin: in/javiergayala  # eg. "pub/dean-attali/8/946/143"
+  stackoverflow:
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: true
+  facebook: false
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "JavierAyala.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -67,16 +68,20 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-6662106-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Chickago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
 
 kramdown:
   input: GFM
@@ -107,52 +112,102 @@ exclude:
   - Vagrantfile
 
 # prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+# prose:
+#   rooturl: '_posts'
+#   media: 'img'
+#   ignore:
+#     - 404.html
+#     - LICENSE
+#     - feed.xml
+#     - _config.yml
+#     - /_layouts
+#     - /_includes
+#     - /css
+#     - /img
+#     - /js
+#   metadata:
+#     _posts:
+#       - name: "layout"
+#         field:
+#           element: "hidden"
+#           value: "post"
+#       - name: "title"
+#         field:
+#           element: "text"
+#           label: "Post title"
+#           placeholder: "Title"
+#           alterable: true
+#       - name: "subtitle"
+#         field:
+#           element: "textarea"
+#           label: "Subtitle"
+#           placeholder: "A description of your post."
+#           alterable: true
+#       - name: "date"
+#         field:
+#           element: "text"
+#           label: "Date"
+#           help: "Enter date of post."
+#           placeholder: "yyyy-mm-dd"
+#           alterable: true
+#       - name: "published"
+#         field:
+#           element: "checkbox"
+#           label: "Publish"
+#           help: "Check to publish post, uncheck to hide."
 
-gems:
-  - jekyll-paginate
+twitter:
+  consumer_key: S5h1m9MR1l51uOcOVOfDGa6ca
+  consumer_secret: rJXoilwUfBLQ3QC7qNiQqKmT8ZdnR4ZjxUUIGkM9DCoz6JdCaP
+  access_token: 15532145-e8IpAOe4YJd9Y1HBbbWck73dWi2BZTJ02OsWWTufZ
+  access_token_secret: EoolkI5dY9AKEviXnQYguj1uqg9zT8aDrMenbZ7bBNQl9
+
+responsive_image:
+  # [Required]
+  # Path to the image template.
+  template: _includes/responsive-image.html
+
+  # [Optional, Default: 85]
+  # Quality to use when resizing images.
+  default_quality: 90
+
+  # [Optional, Default: []]
+  # An array of resize configuration objects. Each object must contain at least
+  # a `width` value.
+  sizes:
+    - width: 480  # [Required] How wide the resized image will be.
+      quality: 80 # [Optional] Overrides default_quality for this size.
+    - width: 800
+    - width: 1400
+      quality: 90
+
+  # [Optional, Default: assets]
+  # The base directory where assets are stored. This is used to determine the
+  # `dirname` value in `output_path_format` below.
+  base_path: assets
+
+  # [Optional, Default: assets/resized/%{filename}-%{width}x%{height}.%{extension}]
+  # The template used when generating filenames for resized images. Must be a
+  # relative path.
+  #
+  # Parameters available are:
+  #   %{dirname}     Directory of the file relative to `base_path` (assets/sub/dir/some-file.jpg => sub/dir)
+  #   %{basename}    Basename of the file (assets/some-file.jpg => some-file.jpg)
+  #   %{filename}    Basename without the extension (assets/some-file.jpg => some-file)
+  #   %{extension}   Extension of the file (assets/some-file.jpg => jpg)
+  #   %{width}       Width of the resized image
+  #   %{height}      Height of the resized image
+  #
+  output_path_format: assets/resized/%{width}/%{basename}
+
+  # By default, only images referenced by the responsive_image and responsive_image_block
+  # tags are resized. Here you can set a list of paths or path globs to resize other
+  # images. This is useful for resizing images which will be referenced from stylesheets.
+  # extra_images:
+  #   - assets/foo/bar.png
+  #   - assets/bgs/*.png
+
+gems: [jekyll/responsive_image, jekyll/tagging, jekyll-paginate, jekyll-sitemap, jekyll-twitter-plugin]
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

@@ -1,7 +1,11 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: Javier Ayala
+subtitle: Javier's musings about the world around him.
+bigimg:
+  - assets/18D722B2-4CEF-405B-BDCF-7C0753D598A1.JPG
+  - assets/2786816F-312B-4595-BD12-D45A0498DA02.JPG
+  - assets/2DB01FED-0D3A-4B02-B885-2389172AA3F3.JPG
 ---
 
 <div class="posts-list">
@@ -9,23 +13,23 @@ subtitle: This is where I will tell my friends way too much about me
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
-	
+
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
-	  {% endif %}  
+	  {% endif %}
     </a>
 
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-  
+
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
-  
+
    </article>
   {% endfor %}
 </div>
@@ -44,3 +48,7 @@ subtitle: This is where I will tell my friends way too much about me
   {% endif %}
 </ul>
 {% endif %}
+
+<div id="tag-cloud">
+  {{ site | tag_cloud }}
+</div>
