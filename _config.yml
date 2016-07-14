@@ -162,6 +162,9 @@ twitter:
   access_token: 15532145-e8IpAOe4YJd9Y1HBbbWck73dWi2BZTJ02OsWWTufZ
   access_token_secret: EoolkI5dY9AKEviXnQYguj1uqg9zT8aDrMenbZ7bBNQl9
 
+monthly_archive:
+  path: archive
+
 responsive_image:
   # [Required]
   # Path to the image template.
