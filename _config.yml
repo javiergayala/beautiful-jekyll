@@ -76,8 +76,10 @@ google_analytics: "UA-6662106-1"
 timezone: "America/Chickago"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:year/:month/:title/
 paginate: 5
+future: true
+
 
 tag_page_layout: tag_page
 tag_page_dir: tag
