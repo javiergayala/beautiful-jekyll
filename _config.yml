@@ -47,6 +47,7 @@ author:
   twitter: javiergayala   # eg. daattali
   linkedin: in/javiergayala  # eg. "pub/dean-attali/8/946/143"
   stackoverflow:
+  flickr: landofthegargoyle
 
 # Select which links to show in the footer
 footer-links-active:
@@ -57,6 +58,7 @@ footer-links-active:
   github: true
   linkedin: true
   stackoverflow: false
+  flickr: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer

@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-responsive_image'
+  gem 'jekyll-compose'
 end

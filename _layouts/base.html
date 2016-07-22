@@ -2,6 +2,7 @@
 common-css:
   - "/css/bootstrap.min.css"
   - "/css/main.css"
+  - "/css/page.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -19,14 +20,14 @@ common-js:
   {% include head.html %}
 
   <body>
-  
+
     {% include nav.html %}
 
     {{ content }}
 
     {% include footer.html %}
-  
+
     {% include footer-scripts.html %}
-  
+
   </body>
 </html>

@@ -1,0 +1,11 @@
+div#tag-cloud {
+  padding-top: 1em;
+}
+
+div#tag-cloud a {
+  background-color: #F5F5F5;
+  border: 1px solid #888;
+  border-radius: 2px;
+  padding-left: .25em;
+  padding-right: .25em;
+}
